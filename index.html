@@ -24,32 +24,36 @@
     <div class="page-wrapper">
       <h1>Daily Horoscope</h1>
       <form>
-        <section>
-          <label for="zodiac-sign">Zodiac Sign:</label>
-          <select name="zodiac-sign" id="zodiac-sign">
-            <option value="aries">Aries</option>
-            <option value="taurus">Taurus</option>
-            <option value="gemini">Gemini</option>
-            <option value="cancer">Cancer</option>
-            <option value="leo">Leo</option>
-            <option value="virgo">Virgo</option>
-            <option value="libra">Libra</option>
-            <option value="scorpio">Scorpio</option>
-            <option value="sagittarius">Sagittarius</option>
-            <option value="capricorn">Capricorn</option>
-            <option value="aquarius">Aquarius</option>
-            <option value="pisces">Pisces</option>
-          </select>
-        </section>
-        <section>
-          <label for="timeframe">Timeframe:</label>
-          <select name="timeframe" id="timeframe">
-            <option value="daily">Daily</option>
-            <option value="weekly">Weekly</option>
-            <option value="monthly">Monthly</option>
-          </select>
-        </section>
-        <section>
+        <div class="inputs-wrapper">
+          <section>
+            <label for="zodiac-sign">Zodiac Sign:</label>
+            <select name="zodiac-sign" id="zodiac-sign">
+              <option selected disabled>Sign</option>
+              <option value="aries">Aries</option>
+              <option value="taurus">Taurus</option>
+              <option value="gemini">Gemini</option>
+              <option value="cancer">Cancer</option>
+              <option value="leo">Leo</option>
+              <option value="virgo">Virgo</option>
+              <option value="libra">Libra</option>
+              <option value="scorpio">Scorpio</option>
+              <option value="sagittarius">Sagittarius</option>
+              <option value="capricorn">Capricorn</option>
+              <option value="aquarius">Aquarius</option>
+              <option value="pisces">Pisces</option>
+            </select>
+          </section>
+          <section>
+            <label for="timeframe">Timeframe:</label>
+            <select name="timeframe" id="timeframe">
+              <option selected disabled>Timeframe</option>
+              <option value="daily">Daily</option>
+              <option value="weekly">Weekly</option>
+              <option value="monthly">Monthly</option>
+            </select>
+          </section>
+        </div>
+        <section class="btn-wrapper">
           <button type="submit" class="prediction-btn">Prediction</button>
           <div>
             <button type="reset" class="reset-btn">Clear</button>

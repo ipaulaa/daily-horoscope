@@ -3,12 +3,14 @@
   --ice: #c5eaf4;
   --night: #344245;
   --santa: #d70816;
-  --mistletoe: #469a47;
+  --mistletoe-100: hsl(121, 47%, 84%);
+  --mistletoe-800: #469a47;
 }
 
 body {
   background: var(--snowman);
   color: var(--night);
+  font-family: "Englebert", sans-serif;
 }
 
 .page-wrapper {
@@ -22,5 +24,42 @@ h1 {
   font:
     700 3rem "Mountains of Christmas",
     serif;
+  text-align: center;
+}
+
+form {
+  margin: 30px 0;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 1.6rem;
+}
+
+.inputs-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+label {
+  color: var(--mistletoe-800);
+  font-size: 1.4rem;
+}
+
+select {
+  width: 35vw;
+  padding: 6px 12px;
+  border-radius: 10px;
+  border: 2px solid var(--mistletoe-800);
+
+  color: var(--santa);
+  background: var(--mistletoe-100);
   text-align: center;
 }
