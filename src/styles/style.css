@@ -10,3 +10,17 @@ body {
   background: var(--snowman);
   color: var(--night);
 }
+
+.page-wrapper {
+  width: 100vw;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+h1 {
+  color: var(--santa);
+  font:
+    700 3rem "Mountains of Christmas",
+    serif;
+  text-align: center;
+}
