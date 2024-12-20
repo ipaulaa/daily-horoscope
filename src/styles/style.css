@@ -1,0 +1,12 @@
+:root {
+  --snowman: #f4f2f3;
+  --ice: #c5eaf4;
+  --night: #344245;
+  --santa: #d70816;
+  --mistletoe: #469a47;
+}
+
+body {
+  background: var(--mistletoe);
+  color: var(--santa);
+}
