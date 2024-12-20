@@ -31,7 +31,7 @@ form {
   margin: 30px 0;
   padding: 20px;
   border-radius: 10px;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 }
 
 .inputs-wrapper {
@@ -40,17 +40,14 @@ form {
   margin-bottom: 30px;
 }
 
-section {
+section:not(.btn-wrapper) {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
   gap: 5px;
 }
 
 label {
   color: var(--mistletoe-800);
-  font-size: 1.4rem;
 }
 
 select {
@@ -62,4 +59,52 @@ select {
   color: var(--santa);
   background: var(--mistletoe-100);
   text-align: center;
+}
+
+.btn-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  border-radius: 10px;
+  color: var(--snowman);
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+  transition:
+    opacity 300ms,
+    transform 300ms;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+button:focus {
+  transform: scale(0.97);
+}
+
+.prediction-btn {
+  width: 45%;
+  height: 80px;
+
+  background: var(--santa);
+  font-size: 2rem;
+}
+
+.btn-wrapper div {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+div button {
+  height: 35px;
+  font-size: 1rem;
+  background: var(--mistletoe-800);
 }
