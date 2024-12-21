@@ -7,10 +7,13 @@ const p = document.querySelector("p");
 predictionBtn.addEventListener("click", e => {
   e.preventDefault();
 
-  fetchPrediction().then(res => {
-    console.log(res);
-    p.textContent = res.data.gahoroscope_data;
-  });
+  fetchPrediction()
+    .then(res => {
+      p.textContent = res.data.gahoroscope_data;
+    })
+    .catch(res => {
+      p.innerHTML = `Opt in here: <a href="https://cors-anywhere.herokuapp.com/">here</a>`;
+    });
 });
 
 const URL =

@@ -42,7 +42,6 @@ form {
   margin-bottom: 30px;
 }
 
-
 section:not(.btn-wrapper) {
   display: flex;
   flex-direction: column;
@@ -101,7 +100,6 @@ button:focus {
   font-size: 2rem;
 }
 
-
 div button {
   height: 35px;
   font-size: 1rem;
@@ -115,4 +113,9 @@ p {
   text-align: justify;
   font-size: 1.6rem;
   line-height: 1.6;
+}
+
+a {
+  color: var(--santa);
+  text-decoration: underline;
 }
