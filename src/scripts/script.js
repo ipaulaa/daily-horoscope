@@ -12,7 +12,7 @@ predictionBtn.addEventListener("click", e => {
       p.textContent = res.data.horoscope_data;
     })
     .catch(res => {
-      p.innerHTML = `Opt in here: <a href="https://cors-anywhere.herokuapp.com/">here</a>`;
+      p.innerHTML = `Opt in here: <a href="https://cors-anywhere.herokuapp.com/" target="_blank">here</a>`;
     });
 });
 
