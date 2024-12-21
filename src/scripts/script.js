@@ -9,7 +9,7 @@ predictionBtn.addEventListener("click", e => {
 
   fetchPrediction()
     .then(res => {
-      p.textContent = res.data.gahoroscope_data;
+      p.textContent = res.data.horoscope_data;
     })
     .catch(res => {
       p.innerHTML = `Opt in here: <a href="https://cors-anywhere.herokuapp.com/">here</a>`;
